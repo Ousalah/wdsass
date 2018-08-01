@@ -1,27 +1,37 @@
-.product {
-	background-color: #eee;
-	padding: 10px;
-	border: 1px solid #ccc;
-	width: 300px;
-	height: 150px;
-	position: relative;
-	@include prefixer(animation, fadeInOut 2s infinite linear, webkit moz o);
-	@include prefixer(box-shadow, 10px 10px 10px 10px #ccc, webkit moz o ms);
-	.overlay {
-		@include overlay;
-		background-color: rgba($redColor, .4);
-		color: #fff;
+/* Start Slider */
+.slider {
+	blockquote {
+		font: {
+			size: 20px;
+			style: italic;
+			weight: blod;
+			family: Tahoma, Arial;
+		}
+		line-height: 1.7;
+		text-align: center;
+		color: #5e5e5e;
+		width: 80%;
+		margin: 30px auto;
+	}
+	img {
+		max-width: 100%;
+	}
+	.bullets {
+		text-align: center;
+		li {
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			background-color: $greyColor;
+			border-radius: 50%;
+			border: 3px solid $greyColor;
+			cursor: pointer;
+			&.active,
+			&:hover {
+				background-color: #fff;
+				border-color: #333;
+			}
+		}
 	}
 }
-
-@include keyframe(fadeInOut) {
-	0% {
-		opacity: .5;
-	}
-	50% {
-		opacity: 1;
-	}
-	100% {
-		opacity: .5;
-	}
-}
+/* End Slider */
