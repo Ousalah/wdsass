@@ -5,10 +5,23 @@
 	width: 300px;
 	height: 150px;
 	position: relative;
+	@include prefixer(animation, fadeInOut 2s infinite linear, webkit moz o);
 	@include prefixer(box-shadow, 10px 10px 10px 10px #ccc, webkit moz o ms);
 	.overlay {
 		@include overlay;
 		background-color: rgba($redColor, .4);
 		color: #fff;
+	}
+}
+
+@include keyframe(fadeInOut) {
+	0% {
+		opacity: .5;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: .5;
 	}
 }

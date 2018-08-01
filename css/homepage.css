@@ -6,6 +6,10 @@
 ** Prefixes Mixin
 ** Auto Add Prefixes To Properties
 */
+/*
+** Animation Mixin
+** Auto Add Prefixes To Animation
+*/
 .product {
   background-color: #eee;
   padding: 10px;
@@ -13,6 +17,10 @@
   width: 300px;
   height: 150px;
   position: relative;
+  -webkit-animation: fadeInOut 2s infinite linear;
+  -moz-animation: fadeInOut 2s infinite linear;
+  -o-animation: fadeInOut 2s infinite linear;
+  animation: fadeInOut 2s infinite linear;
   -webkit-box-shadow: 10px 10px 10px 10px #ccc;
   -moz-box-shadow: 10px 10px 10px 10px #ccc;
   -o-box-shadow: 10px 10px 10px 10px #ccc;
@@ -27,6 +35,62 @@
   height: 100%;
   background-color: rgba(226, 73, 76, 0.4);
   color: #fff;
+}
+
+@-webkit-keyframes fadeInOut {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+@-moz-keyframes fadeInOut {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+@-o-keyframes fadeInOut {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+@-ms-keyframes fadeInOut {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+@keyframes fadeInOut {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
 }
 
 /*# sourceMappingURL=homepage.css.map */
