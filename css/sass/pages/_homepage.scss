@@ -35,3 +35,31 @@
 	}
 }
 /* End Slider */
+
+/* Start Services */
+.services {
+	.service-box {
+		float: $float-left;
+		width: (100% / 3);
+		&:not(:last-of-type) {
+			padding-right: 20px;
+		}
+		.service-title {
+			color: #666;
+			i {
+				font-size: 35px;
+				position: relative;
+				top: 4px;
+			}
+		}
+		.service-desc {
+			color: #777;
+			line-height: 1.5;
+		}
+		.service-link {
+			color: $redColor;
+			text-decoration: none;
+		}
+	}
+}
+/* End Services */
