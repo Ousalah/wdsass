@@ -1,0 +1,30 @@
+.head-with-border {
+	position: relative;
+	h2 {
+		text-align: center;
+		background-color: $redColor;
+		color: #fff;
+		margin: 40px auto;
+		border-radius: 15px;
+		width: 400px;
+		padding: 10px 15px;
+		&:before,
+		&:after {
+			content: "";
+			height: 1.5px;
+			position: absolute;
+			top: 50%;
+			z-index: -1;
+		}
+		&:before {
+			width: 100%;
+			background-color: $greyColor;
+			left: 0;
+		}
+		&:after {
+			width: 450px;
+			background-color: #f6f6f6;
+			left: calc(50% - 225px);
+		}
+	}
+}

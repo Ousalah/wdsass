@@ -21,6 +21,37 @@
   margin: auto;
   padding-left: 15px;
   padding-right: 15px;
+  position: relative;
+}
+
+.head-with-border {
+  position: relative;
+}
+.head-with-border h2 {
+  text-align: center;
+  background-color: #e2494c;
+  color: #fff;
+  margin: 40px auto;
+  border-radius: 15px;
+  width: 400px;
+  padding: 10px 15px;
+}
+.head-with-border h2:before, .head-with-border h2:after {
+  content: "";
+  height: 1.5px;
+  position: absolute;
+  top: 50%;
+  z-index: -1;
+}
+.head-with-border h2:before {
+  width: 100%;
+  background-color: #9c9c9c;
+  left: 0;
+}
+.head-with-border h2:after {
+  width: 450px;
+  background-color: #f6f6f6;
+  left: calc(50% - 225px);
 }
 
 body {
