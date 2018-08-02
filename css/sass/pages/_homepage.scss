@@ -40,9 +40,9 @@
 .services {
 	.service-box {
 		float: $float-left;
-		width: (98% / 3);
+		width: (96% / 3);
 		&:not(:last-of-type) {
-			margin-right: 1%;
+			margin-right: 2%;
 		}
 		.service-title {
 			color: #666;
@@ -93,3 +93,20 @@
 	}
 }
 /* End Our Players */
+
+/* Start Lorem Ipsum */
+.lorem-ipsum {
+	.lorem-box {
+		float: $float-left;
+		width: (94% / 3);
+		&:not(:last-of-type) {
+			margin-right: 3%;
+		}
+		.lorem-img {
+			width: 100%;
+			max-width: 100%;
+			height: 200px;
+		}
+	}
+}
+/* End Lorem Ipsum */
