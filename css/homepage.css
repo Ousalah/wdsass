@@ -24,6 +24,10 @@
   position: relative;
 }
 
+.clearfix {
+  clear: both;
+}
+
 .head-with-border {
   position: relative;
 }
@@ -139,10 +143,10 @@ ul, ol {
 /* Start Services */
 .services .service-box {
   float: left;
-  width: 33.3333333333%;
+  width: 32.6666666667%;
 }
 .services .service-box:not(:last-of-type) {
-  padding-right: 20px;
+  margin-right: 1%;
 }
 .services .service-box .service-title {
   color: #666;
@@ -162,5 +166,33 @@ ul, ol {
 }
 
 /* End Services */
+/* Start Our Players */
+.our-players .player-box {
+  float: left;
+  width: 19.2%;
+}
+.our-players .player-box:not(:last-of-type) {
+  margin-right: 1%;
+}
+.our-players .player-box .player-img {
+  max-width: 100%;
+}
+.our-players .player-box .player-title {
+  color: #666;
+  font-weight: normal;
+}
+.our-players .player-box .player-title span {
+  font-weight: bold;
+}
+.our-players .player-box .player-desc {
+  color: #777;
+  line-height: 1.5;
+}
+.our-players .player-box .player-link {
+  color: #e2494c;
+  text-decoration: none;
+}
+
+/* End Our Players */
 
 /*# sourceMappingURL=homepage.css.map */
