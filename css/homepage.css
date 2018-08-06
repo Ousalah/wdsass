@@ -60,6 +60,26 @@
   left: calc(50% - 225px);
 }
 
+.main-button {
+  background-color: rgba(226, 73, 76, 0.7);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  text-align: center;
+  min-width: 120px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: background-color 0.5s ease;
+  -moz-transition: background-color 0.5s ease;
+  -o-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+.main-button:hover {
+  background-color: #e2494c;
+}
+
 body {
   background-color: #f6f6f6;
   font-family: Tahoma;
@@ -211,5 +231,11 @@ ul, ol {
 }
 
 /* End Lorem Ipsum */
+/* Start Footer */
+.footer {
+  background-color: #9c9c9c;
+}
+
+/* End Footer */
 
 /*# sourceMappingURL=homepage.css.map */
