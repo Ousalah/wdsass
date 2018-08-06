@@ -233,7 +233,56 @@ ul, ol {
 /* End Lorem Ipsum */
 /* Start Footer */
 .footer {
-  background-color: #9c9c9c;
+  background-color: #e2e2e2;
+  overflow: hidden;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 30px;
+}
+.footer .gallery, .footer .info, .footer .contact {
+  float: left;
+}
+.footer .gallery {
+  width: 50%;
+}
+.footer .gallery .post-box {
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.footer .gallery .post-box img {
+  float: left;
+  width: 150px;
+  height: 150px;
+  padding: 3px;
+  border: 1px solid #9c9c9c;
+  background-color: transparant;
+}
+.footer .gallery .post-box .text {
+  float: left;
+  margin-right: 15px;
+  margin-left: 15px;
+  width: calc(100% - 180px);
+}
+.footer .gallery .post-box .text h4 {
+  margin: 8px 0 0;
+  color: #e2494c;
+}
+.footer .gallery .post-box .text p {
+  line-height: 1.7;
+  color: #9c9c9c;
+  margin-top: 10px;
+}
+.footer .info {
+  width: 25%;
+}
+.footer .contact {
+  width: 25%;
+}
+.footer .section-title {
+  color: #444;
+  font-weight: normal;
+  text-transform: capitalize;
+  letter-spacing: 1px;
 }
 
 /* End Footer */

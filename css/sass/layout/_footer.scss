@@ -1,5 +1,54 @@
 /* Start Footer */
 .footer {
-	background-color: $greyColor;
+	background-color: #e2e2e2;
+	overflow: hidden;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-top: 30px;
+	.gallery, .info, .contact {
+		float: $float-left;
+	}
+	.gallery {
+		width: 50%;
+		.post-box {
+			overflow: hidden;
+			margin-bottom: 15px;
+			img {
+				float: $float-left;
+				width: 150px;
+				height: 150px;
+				padding: 3px;
+				border: 1px solid $greyColor;
+				background-color: transparant;
+			}
+			.text {
+				float: $float-left;
+				margin-right: 15px;
+				margin-left: 15px;
+				width: calc(100% - 180px);
+				h4 {
+					margin: 8px 0 0;
+					color: $redColor;
+				}
+				p {
+					line-height: 1.7;
+					color: $greyColor;
+					margin-top: 10px;
+				}
+			}
+		}
+	}
+	.info {
+		width: 25%;
+	}
+	.contact {
+		width: 25%;
+	}
+	.section-title {
+		color: #444;
+		font-weight: normal;
+		text-transform: capitalize;
+		letter-spacing: 1px;
+	}
 }
 /* End Footer */
