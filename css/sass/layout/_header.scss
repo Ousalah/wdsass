@@ -3,8 +3,16 @@
 	overflow: hidden;
 	border-bottom: 1px solid $greyColor;
 	.logo {
-		width: 30%;
-		float: $float-left;
+		@media #{$minSmall} {
+			width: 100%;
+			float: none;
+			text-align: center;
+		}
+		@media #{$minMedium} {
+			width: 30%;
+			float: $float-left;
+			text-align: $text-left;
+		}
 		h1 {
 			margin-bottom: 0;
 			margin-top: 10px;
@@ -14,10 +22,19 @@
 		}
 	}
 	.navbar {
-		width: 70%;
-		float: $float-left;
+		overflow: hidden;
 		background-color: $redColor;
 		border-radius: 15px;
+		@media #{$minSmall} {
+			width: 100%;
+			float: none;
+			margin-top: 30px;
+		}
+		@media #{$minMedium} {
+			width: 70%;
+			float: $float-left;
+			margin-top: 1em;
+		}
 		li {
 			width: 20%;
 			float: $float-left;
