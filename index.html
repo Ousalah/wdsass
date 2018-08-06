@@ -14,6 +14,11 @@
         <div class="logo">
           <h1>Composition</h1>
           <p>Free PSD Website Template</p>
+          <button class="btn-toggler">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
         <ul class="navbar">
           <li><a class="active" href="#">Homepage</a></li>
@@ -183,6 +188,13 @@
     </div>
     <!-- End Footer -->
 
-    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script>
+      $(function() {
+        $(".btn-toggler").on("click", function() {
+          $(".navbar").animate({'height': 'toggle'});
+        });
+      });
+    </script>
   </body>
 </html>

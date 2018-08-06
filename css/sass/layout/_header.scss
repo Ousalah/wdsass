@@ -3,6 +3,7 @@
 	overflow: hidden;
 	border-bottom: 1px solid $greyColor;
 	.logo {
+		position: relative;
 		@media #{$minSmall} {
 			width: 100%;
 			float: none;
@@ -25,10 +26,18 @@
 		overflow: hidden;
 		background-color: $redColor;
 		border-radius: 15px;
+		@media #{$maxMobile} {
+			border-radius: 0;
+			display: none;
+			position: relative;
+			margin-top: -49px;
+			z-index: 2;
+		}
 		@media #{$minSmall} {
 			width: 100%;
 			float: none;
 			margin-top: 30px;
+			display: block !important;
 		}
 		@media #{$minMedium} {
 			width: 70%;
@@ -40,6 +49,11 @@
 			float: $float-left;
 			font-size: 18px;
 			text-align: center;
+			@media #{$maxMobile} {
+				width: 100%;
+				float: none;
+				text-align: $text-left;
+			}
 			a {
 				display: block;
 				padding: 20px 10px;

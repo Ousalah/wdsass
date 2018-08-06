@@ -94,6 +94,33 @@
   background-color: #e2494c;
 }
 
+.btn-toggler {
+  background-color: #e2494c;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 0;
+  display: none;
+  outline: none;
+}
+@media (max-width: 767px) {
+  .btn-toggler {
+    display: block;
+  }
+}
+.btn-toggler span {
+  display: block;
+  height: 3px;
+  width: 40px;
+  background-color: #fff;
+}
+.btn-toggler span:not(:last-child) {
+  margin-bottom: 6px;
+}
+
 body {
   background-color: #f6f6f6;
   font-family: Tahoma;
@@ -109,6 +136,9 @@ ul, ol {
   padding: 20px 0;
   overflow: hidden;
   border-bottom: 1px solid #9c9c9c;
+}
+.header .logo {
+  position: relative;
 }
 @media (min-width: 768px) {
   .header .logo {
@@ -133,11 +163,21 @@ ul, ol {
   background-color: #e2494c;
   border-radius: 15px;
 }
+@media (max-width: 767px) {
+  .header .navbar {
+    border-radius: 0;
+    display: none;
+    position: relative;
+    margin-top: -49px;
+    z-index: 2;
+  }
+}
 @media (min-width: 768px) {
   .header .navbar {
     width: 100%;
     float: none;
     margin-top: 30px;
+    display: block !important;
   }
 }
 @media (min-width: 992px) {
@@ -152,6 +192,13 @@ ul, ol {
   float: left;
   font-size: 18px;
   text-align: center;
+}
+@media (max-width: 767px) {
+  .header .navbar li {
+    width: 100%;
+    float: none;
+    text-align: left;
+  }
 }
 .header .navbar li a {
   display: block;
