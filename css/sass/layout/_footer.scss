@@ -3,8 +3,7 @@
 	background-color: #e2e2e2;
 	overflow: hidden;
 	padding-top: 30px;
-	padding-bottom: 30px;
-	margin-top: 30px;
+	margin-top: 50px;
 	.gallery, .info, .contact {
 		float: $float-left;
 	}
@@ -40,15 +39,71 @@
 	}
 	.info {
 		width: 25%;
+		ul {
+			color: $greyColor;
+			line-height: 1.6;
+			li {
+				height: 25px;
+				.email {
+					color: $redColor;
+				}
+			}
+		}
+		h4 {
+			margin-bottom: 5px;
+			color: $greyColor;
+		}
+		p {
+			color: $greyColor;
+			margin: 5px 0;
+		}
 	}
 	.contact {
 		width: 25%;
+		input[type="text"],
+		input[type="email"],
+		textarea {
+			border: none;
+			border-radius: 5px;
+			margin-bottom: 5px;
+			padding: 10px;
+			width: 100%;
+			color: $greyColor;
+		}
+		textarea {
+			height: 170px;
+			resize: none;
+		}
 	}
 	.section-title {
 		color: #444;
 		font-weight: normal;
 		text-transform: capitalize;
 		letter-spacing: 1px;
+	}
+	.copyright {
+		overflow: hidden;
+		margin-top: 30px;
+		color: $greyColor;
+		border-top: 1px solid $greyColor;
+		padding: 30px 0;
+		.copyright-text,
+		.copyright-author{
+			width: 50%;
+			float: $float-left;
+		}
+		.copyright-text{
+			a {
+				text-decoration: none;
+				color: $greyColor;
+				&:hover {
+					color: $redColor;
+				}
+			}
+		}
+		.copyright-author{
+			text-align: $text-right;
+		}
 	}
 }
 /* End Footer */

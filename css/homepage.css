@@ -236,8 +236,7 @@ ul, ol {
   background-color: #e2e2e2;
   overflow: hidden;
   padding-top: 30px;
-  padding-bottom: 30px;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 .footer .gallery, .footer .info, .footer .contact {
   float: left;
@@ -275,14 +274,68 @@ ul, ol {
 .footer .info {
   width: 25%;
 }
+.footer .info ul {
+  color: #9c9c9c;
+  line-height: 1.6;
+}
+.footer .info ul li {
+  height: 25px;
+}
+.footer .info ul li .email {
+  color: #e2494c;
+}
+.footer .info h4 {
+  margin-bottom: 5px;
+  color: #9c9c9c;
+}
+.footer .info p {
+  color: #9c9c9c;
+  margin: 5px 0;
+}
 .footer .contact {
   width: 25%;
+}
+.footer .contact input[type=text],
+.footer .contact input[type=email],
+.footer .contact textarea {
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  padding: 10px;
+  width: 100%;
+  color: #9c9c9c;
+}
+.footer .contact textarea {
+  height: 170px;
+  resize: none;
 }
 .footer .section-title {
   color: #444;
   font-weight: normal;
   text-transform: capitalize;
   letter-spacing: 1px;
+}
+.footer .copyright {
+  overflow: hidden;
+  margin-top: 30px;
+  color: #9c9c9c;
+  border-top: 1px solid #9c9c9c;
+  padding: 30px 0;
+}
+.footer .copyright .copyright-text,
+.footer .copyright .copyright-author {
+  width: 50%;
+  float: left;
+}
+.footer .copyright .copyright-text a {
+  text-decoration: none;
+  color: #9c9c9c;
+}
+.footer .copyright .copyright-text a:hover {
+  color: #e2494c;
+}
+.footer .copyright .copyright-author {
+  text-align: right;
 }
 
 /* End Footer */
