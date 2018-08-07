@@ -42,6 +42,12 @@
   clear: both;
 }
 
+@media (max-width: 767px) {
+  .text-center-xs {
+    text-align: center;
+  }
+}
+
 .head-with-border {
   position: relative;
 }
@@ -247,12 +253,20 @@ ul, ol {
 
 /* End Slider */
 /* Start Services */
-.services .service-box {
-  float: left;
-  width: 32%;
+@media (max-width: 767px) {
+  .services .service-box i {
+    display: block;
+    margin-bottom: 15px;
+  }
 }
-.services .service-box:not(:last-of-type) {
-  margin-right: 2%;
+@media (min-width: 992px) {
+  .services .service-box {
+    float: left;
+    width: 32%;
+  }
+  .services .service-box:not(:last-of-type) {
+    margin-right: 2%;
+  }
 }
 .services .service-box .service-title {
   color: #666;

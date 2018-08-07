@@ -39,10 +39,18 @@
 /* Start Services */
 .services {
 	.service-box {
-		float: $float-left;
-		width: (96% / 3);
-		&:not(:last-of-type) {
-			margin-right: 2%;
+		@media #{$maxMobile} {
+			i {
+				display: block;
+				margin-bottom: 15px;
+			}
+		}
+		@media #{$minMedium} {
+			float: $float-left;
+			width: (96% / 3);
+			&:not(:last-of-type) {
+				margin-right: 2%;
+			}
 		}
 		.service-title {
 			color: #666;
