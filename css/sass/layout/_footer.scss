@@ -8,12 +8,19 @@
 		float: $float-left;
 	}
 	.gallery {
-		width: 50%;
+		@media #{$minSmall} {
+			width: 100%;
+		}
+		@media #{$minMedium} {
+			width: 50%;
+		}
 		.post-box {
 			overflow: hidden;
 			margin-bottom: 15px;
 			img {
-				float: $float-left;
+				@media #{$minSmall} {
+					float: $float-left;
+				}
 				width: 150px;
 				height: 150px;
 				padding: 3px;
@@ -21,10 +28,12 @@
 				background-color: transparant;
 			}
 			.text {
-				float: $float-left;
-				margin-right: 15px;
-				margin-left: 15px;
-				width: calc(100% - 180px);
+				@media #{$minSmall} {
+					float: $float-left;
+					margin-right: 15px;
+					margin-left: 15px;
+					width: calc(100% - 180px);
+				}
 				h4 {
 					margin: 8px 0 0;
 					color: $redColor;
@@ -38,7 +47,14 @@
 		}
 	}
 	.info {
-		width: 25%;
+		@media #{$maxMobile} {
+			width: 100%;
+		}@media #{$minSmall} {
+			width: 50%;
+		}
+		@media #{$minMedium} {
+			width: 25%;
+		}
 		ul {
 			color: $greyColor;
 			line-height: 1.6;
@@ -59,7 +75,12 @@
 		}
 	}
 	.contact {
-		width: 25%;
+		@media #{$minSmall} {
+			width: 50%;
+		}
+		@media #{$minMedium} {
+			width: 25%;
+		}
 		input[type="text"],
 		input[type="email"],
 		textarea {
@@ -89,10 +110,15 @@
 		padding: 30px 0;
 		.copyright-text,
 		.copyright-author{
-			width: 50%;
-			float: $float-left;
+			@media #{$minSmall} {
+				width: 50%;
+				float: $float-left;
+			}
 		}
 		.copyright-text{
+			@media #{$maxMobile} {
+				margin-bottom: 10px
+			}
 			a {
 				text-decoration: none;
 				color: $greyColor;
@@ -102,7 +128,9 @@
 			}
 		}
 		.copyright-author{
-			text-align: $text-right;
+			@media #{$minSmall} {
+				text-align: $text-right;
+			}
 		}
 	}
 }

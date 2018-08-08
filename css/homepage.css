@@ -380,26 +380,39 @@ ul, ol {
 .footer .gallery, .footer .info, .footer .contact {
   float: left;
 }
-.footer .gallery {
-  width: 50%;
+@media (min-width: 768px) {
+  .footer .gallery {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .footer .gallery {
+    width: 50%;
+  }
 }
 .footer .gallery .post-box {
   overflow: hidden;
   margin-bottom: 15px;
 }
 .footer .gallery .post-box img {
-  float: left;
   width: 150px;
   height: 150px;
   padding: 3px;
   border: 1px solid #9c9c9c;
   background-color: transparant;
 }
-.footer .gallery .post-box .text {
-  float: left;
-  margin-right: 15px;
-  margin-left: 15px;
-  width: calc(100% - 180px);
+@media (min-width: 768px) {
+  .footer .gallery .post-box img {
+    float: left;
+  }
+}
+@media (min-width: 768px) {
+  .footer .gallery .post-box .text {
+    float: left;
+    margin-right: 15px;
+    margin-left: 15px;
+    width: calc(100% - 180px);
+  }
 }
 .footer .gallery .post-box .text h4 {
   margin: 8px 0 0;
@@ -410,8 +423,20 @@ ul, ol {
   color: #9c9c9c;
   margin-top: 10px;
 }
-.footer .info {
-  width: 25%;
+@media (max-width: 767px) {
+  .footer .info {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .footer .info {
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .footer .info {
+    width: 25%;
+  }
 }
 .footer .info ul {
   color: #9c9c9c;
@@ -431,8 +456,15 @@ ul, ol {
   color: #9c9c9c;
   margin: 5px 0;
 }
-.footer .contact {
-  width: 25%;
+@media (min-width: 768px) {
+  .footer .contact {
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .footer .contact {
+    width: 25%;
+  }
 }
 .footer .contact input[type=text],
 .footer .contact input[type=email],
@@ -461,10 +493,17 @@ ul, ol {
   border-top: 1px solid #9c9c9c;
   padding: 30px 0;
 }
-.footer .copyright .copyright-text,
+@media (min-width: 768px) {
+  .footer .copyright .copyright-text,
 .footer .copyright .copyright-author {
-  width: 50%;
-  float: left;
+    width: 50%;
+    float: left;
+  }
+}
+@media (max-width: 767px) {
+  .footer .copyright .copyright-text {
+    margin-bottom: 10px;
+  }
 }
 .footer .copyright .copyright-text a {
   text-decoration: none;
@@ -473,8 +512,10 @@ ul, ol {
 .footer .copyright .copyright-text a:hover {
   color: #e2494c;
 }
-.footer .copyright .copyright-author {
-  text-align: right;
+@media (min-width: 768px) {
+  .footer .copyright .copyright-author {
+    text-align: right;
+  }
 }
 
 /* End Footer */
