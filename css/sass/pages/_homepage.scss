@@ -129,10 +129,12 @@
 /* Start Lorem Ipsum */
 .lorem-ipsum {
 	.lorem-box {
-		float: $float-left;
-		width: (94% / 3);
-		&:not(:last-of-type) {
-			margin-right: 3%;
+		@media #{$minSmall} {
+			float: $float-left;
+			width: (94% / 3);
+			&:not(:last-of-type) {
+				margin-right: 3%;
+			}
 		}
 		.lorem-img {
 			width: 100%;

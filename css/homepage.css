@@ -354,12 +354,14 @@ ul, ol {
 
 /* End Our Players */
 /* Start Lorem Ipsum */
-.lorem-ipsum .lorem-box {
-  float: left;
-  width: 31.3333333333%;
-}
-.lorem-ipsum .lorem-box:not(:last-of-type) {
-  margin-right: 3%;
+@media (min-width: 768px) {
+  .lorem-ipsum .lorem-box {
+    float: left;
+    width: 31.3333333333%;
+  }
+  .lorem-ipsum .lorem-box:not(:last-of-type) {
+    margin-right: 3%;
+  }
 }
 .lorem-ipsum .lorem-box .lorem-img {
   width: 100%;
