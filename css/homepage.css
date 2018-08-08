@@ -62,6 +62,11 @@
   text-transform: uppercase;
   font-weight: normal;
 }
+@media (max-width: 767px) {
+  .head-with-border h2 {
+    width: 250px;
+  }
+}
 .head-with-border h2:before, .head-with-border h2:after {
   content: "";
   height: 1.5px;
@@ -78,6 +83,12 @@
   width: 450px;
   background-color: #f6f6f6;
   left: calc(50% - 225px);
+}
+@media (max-width: 767px) {
+  .head-with-border h2:after {
+    width: 280px;
+    left: calc(50% - 140px);
+  }
 }
 
 .main-button {
@@ -287,28 +298,56 @@ ul, ol {
 
 /* End Services */
 /* Start Our Players */
-.our-players .player-box {
-  float: left;
-  width: 19.2%;
+.our-players .player-container .player-box {
+  margin-bottom: 40px;
 }
-.our-players .player-box:not(:last-of-type) {
-  margin-right: 1%;
+@media (min-width: 768px) {
+  .our-players .player-container .player-box {
+    float: left;
+    width: 49%;
+    text-align: center;
+  }
 }
-.our-players .player-box .player-img {
+@media (min-width: 768px) and (max-width: 991px) {
+  .our-players .player-container .player-box:nth-of-type(2n+1) {
+    margin-right: 2%;
+  }
+}
+@media (min-width: 992px) {
+  .our-players .player-container .player-box {
+    width: 32%;
+    text-align: left;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .our-players .player-container .player-box:not(:nth-of-type(3n+3)) {
+    margin-right: 2%;
+  }
+}
+@media (min-width: 1200px) {
+  .our-players .player-container .player-box {
+    width: 18.4%;
+  }
+  .our-players .player-container .player-box:not(:nth-of-type(5n+5)) {
+    margin-right: 2%;
+  }
+}
+.our-players .player-container .player-box .player-img {
   max-width: 100%;
+  width: 100%;
 }
-.our-players .player-box .player-title {
+.our-players .player-container .player-box .player-title {
   color: #666;
   font-weight: normal;
 }
-.our-players .player-box .player-title span {
+.our-players .player-container .player-box .player-title span {
   font-weight: bold;
 }
-.our-players .player-box .player-desc {
+.our-players .player-container .player-box .player-desc {
   color: #777;
   line-height: 1.5;
 }
-.our-players .player-box .player-link {
+.our-players .player-container .player-box .player-link {
   color: #e2494c;
   text-decoration: none;
 }

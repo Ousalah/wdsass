@@ -74,29 +74,53 @@
 
 /* Start Our Players */
 .our-players {
-	.player-box {
-		float: $float-left;
-		width: (96% / 5);
-		&:not(:last-of-type) {
-			margin-right: 1%;
-		}
-		.player-img {
-			max-width: 100%;
-		}
-		.player-title {
-			color: #666;
-			font-weight: normal;
-			span {
-				font-weight: bold;
+	.player-container {
+		.player-box {
+			margin-bottom: 40px;
+			@media #{$minSmall} {
+				float: $float-left;
+				width: (98% / 2);
+				text-align: center;
 			}
-		}
-		.player-desc {
-			color: #777;
-			line-height: 1.5;
-		}
-		.player-link {
-			color: $redColor;
-			text-decoration: none;
+			@media #{$minSmall} and #{$maxSmall} {
+				&:nth-of-type(2n+1) {
+					margin-right: 2%;
+				}
+			}
+			@media #{$minMedium} {
+				width: (96% / 3);
+				text-align: $text-left;
+			}
+			@media #{$minMedium} and #{$maxMedium} {
+				&:not(:nth-of-type(3n+3)) {
+					margin-right: 2%;
+				}
+			}
+			@media #{$minLarge} {
+				width: (92% / 5);
+				&:not(:nth-of-type(5n+5)) {
+					margin-right: 2%;
+				}
+			}
+			.player-img {
+				max-width: 100%;
+				width: 100%;
+			}
+			.player-title {
+				color: #666;
+				font-weight: normal;
+				span {
+					font-weight: bold;
+				}
+			}
+			.player-desc {
+				color: #777;
+				line-height: 1.5;
+			}
+			.player-link {
+				color: $redColor;
+				text-decoration: none;
+			}
 		}
 	}
 }

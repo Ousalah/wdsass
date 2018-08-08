@@ -10,6 +10,9 @@
 		padding: 10px 15px;
 		text-transform: uppercase;
 		font-weight: normal;
+		@media #{$maxMobile} {
+			width: 250px;
+		}
 		&:before,
 		&:after {
 			content: "";
@@ -27,6 +30,10 @@
 			width: 450px;
 			background-color: #f6f6f6;
 			left: calc(50% - 225px);
+			@media #{$maxMobile} {
+				width: 280px;
+				left: calc(50% - 140px);
+			}
 		}
 	}
 }
