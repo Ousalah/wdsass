@@ -61,3 +61,19 @@ p {
 	}
 }
 ```
+
+## course 26: (advanced sass tricks part 1)
+### mixin: opacity, ofen used propertie
+see ``_mixins.css``
+
+### color calculation
+```
+.elment {
+	color: green + red;
+}
+```
+```
+.elment {
+	color: #080 + #ff0;
+}
+```
