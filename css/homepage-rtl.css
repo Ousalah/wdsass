@@ -1,3 +1,108 @@
+@media (min-width: 992px) {
+  .header .logo {
+    float: right;
+    text-align: right;
+  }
+}
+.header .logo .btn-toggler {
+  right: auto;
+  left: 0;
+}
+@media (min-width: 992px) {
+  .header .navbar {
+    float: right;
+  }
+}
+.header .navbar li {
+  float: right;
+}
+@media (max-width: 767px) {
+  .header .navbar li {
+    text-align: right;
+  }
+}
 
+/* Start Services */
+@media (min-width: 992px) {
+  .services .service-box {
+    float: right;
+  }
+  .services .service-box:not(:last-of-type) {
+    margin-left: 2%;
+    margin-right: 0;
+  }
+}
+
+/* End Services */
+/* Start Our Players */
+@media (min-width: 768px) {
+  .our-players .player-container .player-box {
+    float: right;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .our-players .player-container .player-box:nth-of-type(2n+1) {
+    margin-left: 2%;
+    margin-right: 0;
+  }
+}
+@media (min-width: 992px) {
+  .our-players .player-container .player-box {
+    text-align: right;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .our-players .player-container .player-box:not(:nth-of-type(3n+3)) {
+    margin-left: 2%;
+    margin-right: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .our-players .player-container .player-box:not(:nth-of-type(5n+5)) {
+    margin-left: 2%;
+    margin-right: 0;
+  }
+}
+
+/* End Our Players */
+/* Start Lorem Ipsum */
+@media (min-width: 768px) {
+  .lorem-ipsum .lorem-box {
+    float: right;
+  }
+  .lorem-ipsum .lorem-box:not(:last-of-type) {
+    margin-left: 3%;
+    margin-right: 0;
+  }
+}
+
+/* End Lorem Ipsum */
+/* Start Footer */
+.footer .gallery, .footer .info, .footer .contact {
+  float: right;
+}
+@media (min-width: 768px) {
+  .footer .gallery .post-box img {
+    float: right;
+  }
+}
+@media (min-width: 768px) {
+  .footer .gallery .post-box .text {
+    float: right;
+  }
+}
+@media (min-width: 768px) {
+  .footer .copyright .copyright-text,
+.footer .copyright .copyright-author {
+    float: right;
+  }
+}
+@media (min-width: 768px) {
+  .footer .copyright .copyright-author {
+    text-align: left;
+  }
+}
+
+/* End Footer */
 
 /*# sourceMappingURL=homepage-rtl.css.map */

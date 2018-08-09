@@ -1,2 +1,130 @@
+@import 'sass/helpers/variables';
+
 $float-left: right;
 $float-right: left;
+
+$text-left: right;
+$text-right: left;
+
+
+// Start RTL Header
+.header {
+	.logo {
+		@media #{$minMedium} {
+			float: $float-left;
+			text-align: $text-left;
+		}
+		.btn-toggler {
+			right: auto;
+			left: 0;
+		}
+	}
+	.navbar {
+		@media #{$minMedium} {
+			float: $float-left;
+		}
+		li {
+			float: $float-left;
+			@media #{$maxMobile} {
+				text-align: $text-left;
+			}
+		}
+	}
+}
+// End RTL Header
+
+/* Start Services */
+.services {
+	.service-box {
+		@media #{$minMedium} {
+			float: $float-left;
+			&:not(:last-of-type) {
+				margin-left: 2%;
+				margin-right: 0;
+			}
+		}
+	}
+}
+/* End Services */
+
+/* Start Our Players */
+.our-players {
+	.player-container {
+		.player-box {
+			@media #{$minSmall} {
+				float: $float-left;
+			}
+			@media #{$minSmall} and #{$maxSmall} {
+				&:nth-of-type(2n+1) {
+					margin-left: 2%;
+					margin-right: 0;
+				}
+			}
+			@media #{$minMedium} {
+				text-align: $text-left;
+			}
+			@media #{$minMedium} and #{$maxMedium} {
+				&:not(:nth-of-type(3n+3)) {
+					margin-left: 2%;
+					margin-right: 0;
+				}
+			}
+			@media #{$minLarge} {
+				&:not(:nth-of-type(5n+5)) {
+					margin-left: 2%;
+					margin-right: 0;
+				}
+			}
+		}
+	}
+}
+/* End Our Players */
+
+/* Start Lorem Ipsum */
+.lorem-ipsum {
+	.lorem-box {
+		@media #{$minSmall} {
+			float: $float-left;
+			&:not(:last-of-type) {
+				margin-left: 3%;
+				margin-right: 0;
+			}
+		}
+	}
+}
+/* End Lorem Ipsum */
+
+/* Start Footer */
+.footer {
+	.gallery, .info, .contact {
+		float: $float-left;
+	}
+	.gallery {
+		.post-box {
+			img {
+				@media #{$minSmall} {
+					float: $float-left;
+				}
+			}
+			.text {
+				@media #{$minSmall} {
+					float: $float-left;
+				}
+			}
+		}
+	}
+	.copyright {
+		.copyright-text,
+		.copyright-author{
+			@media #{$minSmall} {
+				float: $float-left;
+			}
+		}
+		.copyright-author{
+			@media #{$minSmall} {
+				text-align: $text-right;
+			}
+		}
+	}
+}
+/* End Footer */
