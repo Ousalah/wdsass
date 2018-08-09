@@ -77,3 +77,78 @@ see ``_mixins.css``
 	color: #080 + #ff0;
 }
 ```
+
+## course 27: (advanced sass tricks part 2)
+### nested css properties
+```
+.elment {
+	.child {
+		font: {
+			weight: bold;
+			size: 20px
+			family: Ariale;
+		}
+		border: {
+			right: 1px solid #ccc;
+			left: 1px solid #ddd;
+		}
+		padding {
+			right: 10px;
+			left: 10px;
+		}
+	}
+}
+```
+
+### extend
+#### normal extend (if you will use it in html file) => ``a lot of groupped elements``
+in `` .scss`` file
+```
+.error {
+	color: green;
+	font-weight: bold;
+}
+
+.element {
+	@extend .error;
+	font-size: 20px;
+}
+```
+
+in `` .css`` file
+```
+.error, .element {
+	color: green;
+	font-weight: bold;
+}
+
+.element {
+	font-size: 20px;
+}
+```
+
+#### placeholder extend (if you will NOT use it in html file) => ``no groupped elements``
+in `` .scss`` file
+```
+%error {
+	color: green;
+	font-weight: bold;
+}
+
+.element {
+	@extend %error;
+	font-size: 20px;
+}
+```
+
+in `` .css`` file
+```
+.element {
+	color: green;
+	font-weight: bold;
+}
+
+.element {
+	font-size: 20px;
+}
+```
